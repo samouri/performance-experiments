@@ -1,0 +1,30 @@
+{
+  "name": "performance-experiments",
+  "version": "0.1.0",
+  "description": "testing out various perf metrics for different HTML pages.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samouri/performance-experiments.git"
+  },
+  "author": "samouri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samouri/performance-experiments/issues"
+  },
+  "homepage": "https://github.com/samouri/performance-experiments#readme",
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  },
+  "dependencies": {
+    "preact": "^10.5.9"
+  },
+  "alias": {
+    "react": "preact/compat",
+    "react-dom/test-utils": "preact/test-utils",
+    "react-dom": "preact/compat"
+  }
+}
