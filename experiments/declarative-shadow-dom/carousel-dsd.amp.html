@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html amp>
+  <head>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.ampproject.org/v0/amp-base-carousel-1.0.css"
+    />
+    <script>
+      (self.AMP = self.AMP || []).push(function (AMP) {
+        AMP.toggleExperiment('bento', true);
+      });
+    </script>
+    <script
+      async
+      custom-element="amp-base-carousel"
+      src="https://cdn.ampproject.org/v0/amp-base-carousel-1.0.js"
+    ></script>
+    <style amp-custom>
+      amp-base-carousel,
+      amp-base-carousel > div {
+        aspect-ratio: 4/1;
+      }
+      .red-gradient {
+        background: brown;
+        background: linear-gradient(
+          90deg,
+          brown 50%,
+          lightsalmon 90%,
+          wheat 100%
+        );
+      }
+      .blue-gradient {
+        background: steelblue;
+        background: linear-gradient(
+          90deg,
+          steelblue 50%,
+          plum 90%,
+          lavender 100%
+        );
+      }
+      .green-gradient {
+        background: seagreen;
+        background: linear-gradient(
+          90deg,
+          seagreen 50%,
+          mediumturquoise 90%,
+          turquoise 100%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <!--  Manually add built flag s.t. it displays. -->
+    <amp-base-carousel id="my-carousel" class="i-amphtml-built">
+      <template shadowroot="open">
+          <style> 
+          .carousel-34d526e{-ms-scroll-chaining:none;overscroll-behavior:contain}.scroll-container-34d526e{width:100%;height:100%;display:-ms-flexbox;display:flex;outline:none;position:relative;-ms-flex-positive:1;flex-grow:1;-ms-flex-wrap:nowrap;flex-wrap:nowrap;box-sizing:content-box!important;scroll-behavior:smooth;-webkit-overflow-scrolling:touch}.hide-scrollbar-34d526e{scrollbar-width:none}.hide-scrollbar-34d526e::-webkit-scrollbar{display:none;box-sizing:content-box!important}.horizontal-scroll-34d526e{overflow-x:auto;overflow-y:hidden;-ms-touch-action:pan-x pinch-zoom;touch-action:pan-x pinch-zoom;-ms-flex-direction:row;flex-direction:row;scroll-snap-type:x mandatory;scroll-snap-type-x:mandatory}.horizontal-scroll-34d526e.hide-scrollbar-34d526e{padding-bottom:20px}.vertical-scroll-34d526e{overflow-x:hidden;-ms-touch-action:pan-y pinch-zoom;touch-action:pan-y pinch-zoom;-ms-flex-direction:column;flex-direction:column;scroll-snap-type:y mandatory;scroll-snap-type-y:mandatory}.slide-element-34d526e{display:-ms-flexbox;display:flex;overflow:hidden;position:relative;-ms-flex-align:center;align-items:center;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:center;justify-content:center}.enable-snap-34d526e{scroll-snap-stop:always}.enable-snap-34d526e.start-align-34d526e{scroll-snap-align:start}.enable-snap-34d526e.center-align-34d526e{scroll-snap-align:center}.disable-snap-34d526e{scroll-snap-stop:none;scroll-snap-align:none;scroll-snap-coordinate:none}.slide-sizing-34d526e>::slotted(*),.slide-sizing-34d526e>:first-child{margin:0!important;max-width:100%;box-sizing:border-box!important;max-height:100%;-ms-flex-negative:0!important;flex-shrink:0!important}.slide-sizing-34d526e>::slotted(*){width:100%}.slide-sizing-34d526e.thumbnails-34d526e{padding:0px 4px}.arrow-34d526e{top:50%;display:-ms-flexbox;display:flex;z-index:1;-ms-flex-align:center;align-items:center;-ms-flex-direction:row;flex-direction:row;pointer-events:auto;-ms-flex-pack:justify;justify-content:space-between}.arrow-34d526e.ltr-34d526e{transform:translateY(-50%)}.arrow-34d526e.rtl-34d526e{transform:scaleX(-1) translateY(-50%)}.arrow-34d526e.arrow-next-34d526e.rtl-34d526e,.arrow-34d526e.arrow-prev-34d526e.ltr-34d526e{left:0}.arrow-34d526e.arrow-next-34d526e.ltr-34d526e,.arrow-34d526e.arrow-prev-34d526e.rtl-34d526e{right:0}.arrow-disabled-34d526e{pointer-events:none}.arrow-disabled-34d526e.inset-arrow-34d526e{opacity:0}.arrow-disabled-34d526e.outset-arrow-34d526e{opacity:0.5}.inset-arrow-34d526e{padding:12px;position:absolute}.outset-arrow-34d526e{top:50%;height:100%;position:relative;transform:translateY(-50%);-ms-flex-align:center;align-items:center;-ms-flex-negative:0;flex-shrink:0;border-radius:50%;pointer-events:auto;background-size:24px 24px}.outset-arrow-34d526e.arrow-prev-34d526e{margin-inline-end:10px;margin-inline-start:4px}.outset-arrow-34d526e.arrow-next-34d526e{margin-inline-end:4px;margin-inline-start:10px}.default-arrow-button-34d526e{color:#fff;width:36px;border:none;height:36px;stroke:currentColor;display:-ms-flexbox;display:flex;outline:none;padding:0;position:relative;transition:stroke 200ms;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;background-color:transparent}.default-arrow-button-34d526e:hover:not([disabled]){color:#222}.default-arrow-button-34d526e:active:not([disabled]){transition-duration:0ms}.default-arrow-button-34d526e:hover:not([disabled]) .arrow-background-34d526e{background-color:hsla(0,0%,100%,0.8)}.default-arrow-button-34d526e:active:not([disabled]) .arrow-background-34d526e{background-color:#fff;transition-duration:0ms}.default-arrow-button-34d526e:focus{border:1px solid #000;box-shadow:0 0 0 1pt #fff;border-radius:50%}.arrow-base-style-34d526e{top:0;left:0;width:100%;height:100%;position:absolute;border-radius:50%}.arrow-frosting-34d526e{-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}.arrow-backdrop-34d526e{opacity:0.5;-webkit-backdrop-filter:blur(12px) invert(1) grayscale(0.6) brightness(0.8);backdrop-filter:blur(12px) invert(1) grayscale(0.6) brightness(0.8)}.arrow-background-34d526e{box-shadow:inset 0 0 0px 1px rgba(0,0,0,0.08),0 1px 4px 1px rgba(0,0,0,0.2);transition:background-color 200ms;background-color:rgba(0,0,0,0.3)}.arrow-icon-34d526e{width:24px;height:24px;position:relative} 
+          </style>
+        <c style="display: contents; background: inherit" part="c">
+          <div
+            tabindex="0"
+            loading="auto"
+            class="carousel-34d526e"
+            style="
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              width: 100%;
+              height: 100%;
+              contain: strict;
+            "
+          >
+            <div
+              style="
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                display: flex;
+                direction: ltr;
+              "
+            >
+              <div
+                class="arrow-34d526e arrow-prev-34d526e inset-arrow-34d526e ltr-34d526e"
+              >
+                <button
+                  class="default-arrow-button-34d526e"
+                  aria-label="Previous item in carousel"
+                  aria-disabled="false"
+                >
+                  <div
+                    class="arrow-base-style-34d526e arrow-frosting-34d526e"
+                  ></div>
+                  <div
+                    class="arrow-base-style-34d526e arrow-backdrop-34d526e"
+                  ></div>
+                  <div
+                    class="arrow-base-style-34d526e arrow-background-34d526e"
+                  ></div>
+                  <svg class="arrow-icon-34d526e" viewBox="0 0 24 24">
+                    <path
+                      d="M14,7.4 L9.4,12 L14,16.6"
+                      fill="none"
+                      stroke-width="2px"
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="scroll-container-34d526e hide-scrollbar-34d526e horizontal-scroll-34d526e"
+                tabindex="0"
+                style="scroll-behavior: smooth"
+              >
+                <div
+                  data-slide="0"
+                  class="slide-sizing-34d526e slide-element-34d526e enable-snap-34d526e start-align-34d526e"
+                  part="slide"
+                  style="flex: 0 0 100%"
+                >
+                  <slot name="i-amphtml-children-1"></slot>
+                </div>
+                <div
+                  data-slide="1"
+                  class="slide-sizing-34d526e slide-element-34d526e enable-snap-34d526e start-align-34d526e"
+                  part="slide"
+                  style="flex: 0 0 100%"
+                >
+                  <slot name="i-amphtml-children-2"></slot>
+                </div>
+                <div
+                  data-slide="2"
+                  class="slide-sizing-34d526e slide-element-34d526e enable-snap-34d526e start-align-34d526e"
+                  part="slide"
+                  style="flex: 0 0 100%"
+                >
+                  <slot name="i-amphtml-children-3"></slot>
+                </div>
+              </div>
+              <div
+                class="arrow-34d526e arrow-next-34d526e arrow-disabled-34d526e inset-arrow-34d526e ltr-34d526e"
+              >
+                <button
+                  class="default-arrow-button-34d526e"
+                  aria-label="Next item in carousel"
+                  aria-disabled="true"
+                  disabled=""
+                >
+                  <div
+                    class="arrow-base-style-34d526e arrow-frosting-34d526e"
+                  ></div>
+                  <div
+                    class="arrow-base-style-34d526e arrow-backdrop-34d526e"
+                  ></div>
+                  <div
+                    class="arrow-base-style-34d526e arrow-background-34d526e"
+                  ></div>
+                  <svg class="arrow-icon-34d526e" viewBox="0 0 24 24">
+                    <path
+                      d="M10,7.4 L14.6,12 L10,16.6"
+                      fill="none"
+                      stroke-width="2px"
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </c>
+        <slot name="i-amphtml-svc"></slot>
+      </template>
+      <div class="red-gradient" slot="i-amphtml-children-1"></div>
+      <div class="blue-gradient" slot="i-amphtml-children-2"></div>
+      <div class="green-gradient" slot="i-amphtml-children-3"></div>
+    </amp-base-carousel>
+    <div class="buttons" style="margin-top: 8px">
+      <button id="prev-button">Go to previous slide</button>
+      <button id="next-button">Go to next slide</button>
+      <button id="go-to-button">Go to slide with green gradient</button>
+    </div>
+
+    <script>
+      (async () => {
+        const carousel = document.querySelector('#my-carousel');
+        await customElements.whenDefined('amp-base-carousel');
+        const api = await carousel.getApi();
+
+        // set up button actions
+        document.querySelector('#prev-button').onclick = () => api.prev();
+        document.querySelector('#next-button').onclick = () => api.next();
+        document.querySelector('#go-to-button').onclick = () => api.goToSlide(2);
+      })();
+    </script>
+  </body>
+</html>

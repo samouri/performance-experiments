@@ -1,10 +1,5 @@
 # Performance Experiments
 
+- Declarative Shadow DOM
 
-Questions
-
-- Does iframe=lazy work? Must not vs. should not. If not good enough, then we at a minimum need to add a Runtime for lazy loading.
-- Preact 1 vs. many mount point performance:
-  - Cost/Savings of sharing State/Context using Mitt vs. single mount.
-  - Cost/Saving of initial hydration if all nodes must be mounted.
-  - Cost/Saving of initial hydration if there are large gaps of static html elements which do not need to be mounted
+For the simplest AMP Document with just a carousel, compare the performance regular, and 4 variants on SSRing (DSD, dsd polyfill-inline, dsd polyfill-loop, lightdom).

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html amp>
+  <head>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.ampproject.org/v0/amp-base-carousel-1.0.css"
+    />
+    <script>
+      (self.AMP = self.AMP || []).push(function (AMP) {
+        AMP.toggleExperiment('bento', true);
+      });
+    </script>
+    <script
+      async
+      custom-element="amp-base-carousel"
+      src="https://cdn.ampproject.org/v0/amp-base-carousel-1.0.js"
+    ></script>
+    <style>
+      amp-base-carousel,
+      amp-base-carousel > div {
+        aspect-ratio: 4/1;
+      }
+      .red-gradient {
+        background: brown;
+        background: linear-gradient(
+          90deg,
+          brown 50%,
+          lightsalmon 90%,
+          wheat 100%
+        );
+      }
+      .blue-gradient {
+        background: steelblue;
+        background: linear-gradient(
+          90deg,
+          steelblue 50%,
+          plum 90%,
+          lavender 100%
+        );
+      }
+      .green-gradient {
+        background: seagreen;
+        background: linear-gradient(
+          90deg,
+          seagreen 50%,
+          mediumturquoise 90%,
+          turquoise 100%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <amp-base-carousel id="my-carousel">
+      <div class="red-gradient"></div>
+      <div class="blue-gradient"></div>
+      <div class="green-gradient"></div>
+    </amp-base-carousel>
+    <div class="buttons" style="margin-top: 8px">
+      <button id="prev-button">Go to previous slide</button>
+      <button id="next-button">Go to next slide</button>
+      <button id="go-to-button">Go to slide with green gradient</button>
+    </div>
+
+    <script>
+      (async () => {
+        const carousel = document.querySelector('#my-carousel');
+        await customElements.whenDefined('amp-base-carousel');
+        const api = await carousel.getApi();
+
+        // set up button actions
+        document.querySelector('#prev-button').onclick = () => api.prev();
+        document.querySelector('#next-button').onclick = () => api.next();
+        document.querySelector('#go-to-button').onclick = () => api.goToSlide(2);
+      })();
+    </script>
+  </body>
+</html>
