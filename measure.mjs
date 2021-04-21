@@ -10,13 +10,13 @@ app.listen(8080);
 let urls = {
   'http://localhost:8080/experiments/declarative-shadow-dom/carousel-default.amp.html':
     'Default',
-  'http://localhost:8080/experiments/declarative-shadow-dom/carousel-dsd.amp.html': 'DSD',
+  'http://localhost:8080/experiments/declarative-shadow-dom/carousel-dsd.amp.html': 'DSD Native',
   'http://localhost:8080/experiments/declarative-shadow-dom/carousel-polyfill.amp.html':
     'DSD Polyfill',
   'http://localhost:8080/experiments/declarative-shadow-dom/carousel-light.amp.html':
     'Light DOM',
 };
-const runs = 10;
+const runs = 30;
 
 async function run() {
   const scores = await PerfLeaderboard(Object.keys(urls), runs);
