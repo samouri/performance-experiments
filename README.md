@@ -1,6 +1,6 @@
 # Performance Experiments
 
-- Declarative Shadow DOM
+## Declarative Shadow DOM
 
 For the simplest AMP Document with just a carousel, compare the performance regular, and variants on SSRing (Default, DSD Native, DSD Polyfill, Light DOM).
 ``` 
