@@ -3,6 +3,8 @@
 ## Declarative Shadow DOM
 
 For the simplest AMP Document with just a carousel, compare the performance regular, and variants on SSRing (Default, DSD Native, DSD Polyfill, Light DOM).
+
+**results**
 ``` 
 ┌──────┬──────┬──────────────┬────────────┬────────────────────┬───────────────────────┐
 │ rank │ runs │      version │ FCP (mean) │         LCP (mean) │            CLS (mean) │
@@ -13,3 +15,6 @@ For the simplest AMP Document with just a carousel, compare the performance regu
 │    4 │   30 │      Default │   1376.819 │           2236.319 │ 0.0007318767903415672 │
 └──────┴──────┴──────────────┴────────────┴────────────────────┴───────────────────────┘
 ```
+
+**thoughts**
+- There must be an error with DSD Native, the LCP score doesn't makese sense. The rest aligns well with expectations.
