@@ -1,10 +1,11 @@
 {
   "name": "performance-experiments",
   "version": "0.1.0",
-  "description": "testing out various perf metrics for different HTML pages.",
+  "description": "Miscellaneous performance experiments",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html"
+    "measure": "node measure.mjs",
+    "start": "node serve.mjs"
   },
   "repository": {
     "type": "git",
@@ -16,15 +17,11 @@
     "url": "https://github.com/samouri/performance-experiments/issues"
   },
   "homepage": "https://github.com/samouri/performance-experiments#readme",
-  "devDependencies": {
-    "parcel": "^1.12.4"
-  },
   "dependencies": {
-    "preact": "^10.5.9"
-  },
-  "alias": {
-    "react": "preact/compat",
-    "react-dom/test-utils": "preact/test-utils",
-    "react-dom": "preact/compat"
+    "console-table-printer": "^2.8.2",
+    "express": "^4.17.1",
+    "performance-leaderboard": "^4.1.0",
+    "preact": "^10.5.9",
+    "preact-compat": "^3.19.0"
   }
 }
