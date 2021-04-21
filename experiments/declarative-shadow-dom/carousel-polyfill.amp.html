@@ -69,6 +69,14 @@
       <div class="green-gradient"></div>
        -->
     </amp-base-carousel>
+    <!-- Polyfill -->
+    <script>
+      document.querySelectorAll('template').forEach((template) => {
+        const shadowRoot = template.parentNode.attachShadow({ mode: 'open' });
+        shadowRoot.appendChild(template.content);
+        template.remove();
+      });
+    </script>
     <div class="buttons" style="margin-top: 8px">
       <button id="prev-button">Go to previous slide</button>
       <button id="next-button">Go to next slide</button>
