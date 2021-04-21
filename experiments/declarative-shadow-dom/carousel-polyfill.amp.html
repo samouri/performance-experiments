@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html amp>
   <head>
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <link
+    <!-- <script async src="https://cdn.ampproject.org/v0.js"></script> -->
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.ampproject.org/v0/amp-base-carousel-1.0.css"
-    />
+    /> -->
     <script>
       (self.AMP = self.AMP || []).push(function (AMP) {
         AMP.toggleExperiment('bento', true);
@@ -60,9 +60,9 @@
           <!-- DSD Contents from getInnerHTML({includeShadowRoots: true}) -->
         <c style="display: contents; background: inherit;" part="c"><div tabindex="0" loading="auto" class="carousel-34d526e" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; contain: strict;"><div style="position: relative; width: 100%; height: 100%; overflow: hidden; display: flex; direction: ltr;"><div class="arrow-34d526e arrow-prev-34d526e arrow-disabled-34d526e inset-arrow-34d526e ltr-34d526e"><button class="default-arrow-button-34d526e" aria-label="Previous item in carousel" disabled="" aria-disabled="true"><div class="arrow-base-style-34d526e arrow-frosting-34d526e"></div><div class="arrow-base-style-34d526e arrow-backdrop-34d526e"></div><div class="arrow-base-style-34d526e arrow-background-34d526e"></div><svg class="arrow-icon-34d526e" viewBox="0 0 24 24"><path d="M14,7.4 L9.4,12 L14,16.6" fill="none" stroke-width="2px" stroke-linejoin="round" stroke-linecap="round"></path></svg></button></div><div class="scroll-container-34d526e hide-scrollbar-34d526e horizontal-scroll-34d526e" tabindex="0" style="scroll-behavior: smooth;"><div data-slide="0" class="slide-sizing-34d526e slide-element-34d526e enable-snap-34d526e start-align-34d526e  " part="slide" style="flex: 0 0 100%;"><slot name="i-amphtml-children-1"></slot></div><div data-slide="1" class="slide-sizing-34d526e slide-element-34d526e enable-snap-34d526e start-align-34d526e  " part="slide" style="flex: 0 0 100%;"><slot name="i-amphtml-children-2"></slot></div><div data-slide="2" class="slide-sizing-34d526e slide-element-34d526e enable-snap-34d526e start-align-34d526e  " part="slide" style="flex: 0 0 100%;"><slot name="i-amphtml-children-3"></slot></div></div><div class="arrow-34d526e arrow-next-34d526e  inset-arrow-34d526e ltr-34d526e"><button class="default-arrow-button-34d526e" aria-label="Next item in carousel" aria-disabled="false"><div class="arrow-base-style-34d526e arrow-frosting-34d526e"></div><div class="arrow-base-style-34d526e arrow-backdrop-34d526e"></div><div class="arrow-base-style-34d526e arrow-background-34d526e"></div><svg class="arrow-icon-34d526e" viewBox="0 0 24 24"><path d="M10,7.4 L14.6,12 L10,16.6" fill="none" stroke-width="2px" stroke-linejoin="round" stroke-linecap="round"></path></svg></button></div></div></div></c><slot name="i-amphtml-svc"></slot>
     </template>
-      <img src="../imgs/photo1.jpg" slot="i-amphtml-children-1">
-      <img src="../imgs/photo2.jpg" slot="i-amphtml-children-2">
-      <img src="../imgs/photo3.jpg" slot="i-amphtml-children-3">
+      <img src="../imgs/photo1.jpg" slot="i-amphtml-children-1" hidden>
+      <img src="../imgs/photo2.jpg" slot="i-amphtml-children-2" hidden>
+      <img src="../imgs/photo3.jpg" slot="i-amphtml-children-3" hidden>
       <!-- 
       <div class="red-gradient"></div>
       <div class="blue-gradient"></div>
@@ -76,6 +76,7 @@
         shadowRoot.appendChild(template.content);
         template.remove();
       });
+      document.querySelectorAll('img').forEach(n => n.removeAttribute('hidden'))
     </script>
     <div class="buttons" style="margin-top: 8px">
       <button id="prev-button">Go to previous slide</button>

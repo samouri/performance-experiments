@@ -12,7 +12,7 @@ let urls = {
     'Default',
   'http://localhost:8080/experiments/declarative-shadow-dom/carousel-dsd.amp.html': 'DSD',
   'http://localhost:8080/experiments/declarative-shadow-dom/carousel-polyfill.amp.html':
-    'DSD Polyfill inline',
+    'DSD Polyfill',
   'http://localhost:8080/experiments/declarative-shadow-dom/carousel-light.amp.html':
     'Light DOM',
 };
